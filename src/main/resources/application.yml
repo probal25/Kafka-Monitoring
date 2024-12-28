@@ -1,0 +1,14 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: Kafka-Demo
+  kafka:
+    bootstrap-servers: localhost:9092
+
+kafka:
+  topics:
+    - name: order-events
+      partitions: 2
+      replication-factor: 1
